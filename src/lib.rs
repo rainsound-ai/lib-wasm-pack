@@ -15,6 +15,7 @@ const CRATE_VERSION: &str = include_cargo_toml::include_toml!("package"."version
 ///     // the output would be in "./test-crate/target/built-test-crate".
 ///     // So instead, we go up a directory.
 ///     "../target/built-test-crate",
+///     // The input crate path is relative to the current directory.
 ///     "test-crate",
 /// ];
 ///

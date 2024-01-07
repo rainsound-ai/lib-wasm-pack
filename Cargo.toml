@@ -7,7 +7,7 @@ description = "A library for invoking the wasm-pack CLI from Rust code."
 homepage = "https://github.com/rainsound-ai/lib-wasm-pack"
 repository = "https://github.com/rainsound-ai/lib-wasm-pack"
 readme = "readme.md"
-keywords = ["tailwind", "css", "cli"]
+keywords = ["wasm-pack"]
 categories = [
     "api-bindings",
     "development-tools",
