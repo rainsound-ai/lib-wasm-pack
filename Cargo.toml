@@ -1,0 +1,22 @@
+[package]
+name = "lib_wasm_pack"
+version = "0.12.1-0.1.0"
+edition = "2021"
+license = "MIT"
+description = "A library for invoking the wasm-pack CLI from Rust code."
+homepage = "https://github.com/rainsound-ai/lib-wasm-pack"
+repository = "https://github.com/rainsound-ai/lib-wasm-pack"
+readme = "readme.md"
+keywords = ["tailwind", "css", "cli"]
+categories = [
+    "api-bindings",
+    "development-tools",
+    "development-tools::build-utils",
+    "web-programming",
+]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+duct = "0.13.7"
+include-cargo-toml = "0.1.0"
