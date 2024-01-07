@@ -99,7 +99,8 @@ fn get_cli_executable_file() -> Result<PathBuf, WasmPackError> {
         cli_executable_bytes.len()
     );
 
-    let temp_file_name = format!("wasm-pack-{}-v{}", platform, CRATE_VERSION);
+    let uuid = uuid::Uuid::new_v4().to_string();
+    let temp_file_name = format!("wasm-pack-{}-v{}-{}", platform, CRATE_VERSION, uuid);
     let temp_file_path = std::env::current_dir()
         .map_err(WasmPackError::CouldntSaveCliExecutableToTemporaryFile)?
         .join("target")

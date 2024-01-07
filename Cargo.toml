@@ -20,3 +20,4 @@ categories = [
 [dependencies]
 duct = "0.13.7"
 include-cargo-toml = "0.1.0"
+uuid = { version = "1.6.1", features = ["v4"] }
